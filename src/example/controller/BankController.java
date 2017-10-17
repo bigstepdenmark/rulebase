@@ -29,8 +29,15 @@ public class BankController
     {
         List<Bank> filteredBanks = new ArrayList<>();
 
-        // Do filter
+        List<Bank> allBanks = getBanks();
 
+        for (Bank b: allBanks) {
+
+            if(creditScore <= b.getMinCreditScore()){
+
+                filteredBanks.add(b);
+            }
+        }
         return filteredBanks;
     }
 
