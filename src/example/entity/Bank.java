@@ -2,7 +2,7 @@ package example.entity;
 
 public class Bank
 {
-    private int id;
+    private String id;
     private String name;
     private int minCreditScore;
 
@@ -10,19 +10,19 @@ public class Bank
     {
     }
 
-    public Bank(int id, String name, int minCreditScore)
+    public Bank( String id, String name, int minCreditScore)
     {
         this.id = id;
         this.name = name;
         this.minCreditScore = minCreditScore;
     }
 
-    public int getId()
+    public String getId()
     {
         return id;
     }
 
-    public void setId(int id)
+    public void setId( String id)
     {
         this.id = id;
     }
