@@ -9,7 +9,7 @@ public class Serve
     public static void main( String[] args )
     {
         Object implementor = new BankController();
-        String address = "http://localhost:8000/rolebase";
+        String address = "http://localhost:9000/rulebase";
         Endpoint.publish( address, implementor );
     }
 }
