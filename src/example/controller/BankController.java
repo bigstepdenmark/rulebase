@@ -28,7 +28,6 @@ public class BankController
     public List<Bank> getFilteredBanks( int creditScore )
     {
         List<Bank> filteredBanks = new ArrayList<>();
-
         List<Bank> allBanks = getBanks();
 
         for (Bank b: allBanks) {
