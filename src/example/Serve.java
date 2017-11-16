@@ -8,7 +8,6 @@ public class Serve
 {
     public static void main( String[] args )
     {
-        System.out.println("Starting Rule Base service...");
         Object implementor = new BankController();
         String address = "http://localhost:9000/rulebase";
         Endpoint.publish( address, implementor );
